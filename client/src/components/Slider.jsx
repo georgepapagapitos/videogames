@@ -1,8 +1,13 @@
 import styled from 'styled-components';
+import axios from 'axios';
+
+// React imports
+import { useState, useEffect } from 'react';
 
 // mui imports
 import ArrowLeftOutlinedIcon from '@mui/icons-material/ArrowLeftOutlined';
 import ArrowRightOutlinedIcon from '@mui/icons-material/ArrowRightOutlined';
+import { sliderGames } from '../data';
 
 // Styled components
 const Container = styled.div`
@@ -14,8 +19,8 @@ const Container = styled.div`
 const Arrow = styled.div`
   width: 50px;
   height: 50px;
-  background-color: #ffffffe2;
   border-radius: 50%;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,6 +38,7 @@ const Wrapper = styled.div`
   height: 100%;
   display: flex;
   transition: all 1.5s ease;
+  transform: translateX(${(props) => props.slideIndex * -100}vw);
 `;
 
 const Slide = styled.div`
@@ -54,7 +60,7 @@ const Image = styled.img`
 
 const InfoContainer = styled.div`
   flex: 1;
-  padding: 50px;
+  padding: 75px;
 `;
 
 const Title = styled.h1`
@@ -77,24 +83,36 @@ const Button = styled.button`
 
 // Slider component
 const Slider = () => {
+  const [slideIndex, setSlideIndex] = useState(0);
+
+  const handleArrowClick = (direction) => {
+    if (direction === 'left') {
+      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 4);
+    } else {
+      setSlideIndex(slideIndex < 4 ? slideIndex + 1 : 0);
+    }
+  };
+
   return (
     <Container>
-      <Arrow direction="left">
+      <Arrow direction="left" onClick={() => handleArrowClick('left')}>
         <ArrowLeftOutlinedIcon />
       </Arrow>
-      <Wrapper>
-        <Slide>
-          <ImageContainer>
-            <Image />
-          </ImageContainer>
-          <InfoContainer>
-            <Title>GAME TITLE</Title>
-            <Description>GAME DESCRIPTION</Description>
-            <Button>MORE INFO</Button>
-          </InfoContainer>
-        </Slide>
+      <Wrapper slideIndex={slideIndex}>
+        {sliderGames.map((game) => (
+          <Slide key={game.id}>
+            <ImageContainer>
+              <Image src={game.image} />
+            </ImageContainer>
+            <InfoContainer>
+              <Title>{game.title}</Title>
+              <Description>{game.description}</Description>
+              <Button>MORE INFO</Button>
+            </InfoContainer>
+          </Slide>
+        ))}
       </Wrapper>
-      <Arrow direction="right">
+      <Arrow direction="right" onClick={() => handleArrowClick('right')}>
         <ArrowRightOutlinedIcon />
       </Arrow>
     </Container>
