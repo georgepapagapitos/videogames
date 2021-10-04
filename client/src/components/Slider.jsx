@@ -1,18 +1,24 @@
 import styled from 'styled-components';
-import {
-  ArrowLeftOutlinedIcon,
-  ArrowRightOutlinedIcon,
-} from '@mui/icons-material';
 
+// mui imports
+import ArrowLeftOutlinedIcon from '@mui/icons-material/ArrowLeftOutlined';
+import ArrowRightOutlinedIcon from '@mui/icons-material/ArrowRightOutlined';
+
+// Styled components
 const Container = styled.div`
-  border: 1px solid red;
   width: 100%;
   height: 100vh;
   display: flex;
 `;
 
-const Arrow = styled.div``;
+const Arrow = styled.div`
+  width: 50px;
+  height: 50px;
+  background-color: #ffffffe2;
+  border-radius: 50%;
+`;
 
+// Slider component
 const Slider = () => {
   return (
     <Container>
