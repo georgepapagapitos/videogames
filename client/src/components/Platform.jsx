@@ -11,7 +11,7 @@ const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 75%;
+  opacity: 0.7;
 `;
 
 const Info = styled.div`
@@ -31,6 +31,8 @@ const Title = styled.h1`
   font-size: 50px;
   font-weight: 800;
   margin-bottom: 20px;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.3);
 `;
 
 const Button = styled.button`
