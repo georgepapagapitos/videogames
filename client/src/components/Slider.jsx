@@ -1,19 +1,20 @@
 import styled from 'styled-components';
-import axios from 'axios';
 
 // React imports
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 // mui imports
 import ArrowLeftOutlinedIcon from '@mui/icons-material/ArrowLeftOutlined';
 import ArrowRightOutlinedIcon from '@mui/icons-material/ArrowRightOutlined';
 import { sliderGames } from '../data';
+import { mobile } from '../responsive';
 
 // Styled components
 const Container = styled.div`
   width: 100%;
   height: 100vh;
   display: flex;
+  ${mobile({ display: 'none' })}
 `;
 
 const Arrow = styled.div`
