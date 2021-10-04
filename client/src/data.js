@@ -52,4 +52,4 @@ export const platforms = [
     name: 'Nintendo Switch',
     image: 'https://cdn.vox-cdn.com/thumbor/6QTbhbmlSyMwl5E8y1aU4x3cTz8=/0x0:2040x1360/1200x800/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/65003327/jbareham_1492_170228_0024.0.0.jpg'
   }
-]
+];
