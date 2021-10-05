@@ -48,6 +48,7 @@ const Button = styled.button`
   background-color: white;
   cursor: pointer;
   margin-bottom: 10px;
+  ${mobile({ width: '75%' })};
 `;
 
 const Link = styled.a`
