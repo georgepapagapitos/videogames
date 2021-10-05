@@ -53,3 +53,46 @@ export const platforms = [
     image: 'https://cdn.vox-cdn.com/thumbor/6QTbhbmlSyMwl5E8y1aU4x3cTz8=/0x0:2040x1360/1200x800/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/65003327/jbareham_1492_170228_0024.0.0.jpg'
   }
 ];
+
+export const games = [
+  {
+    id: 1,
+    name: 'Cyberpunk 2077',
+    image: 'https://cdna.artstation.com/p/assets/images/images/033/037/886/large/artur-tarnowski-malemain.jpg?1608208334'
+  },
+  {
+    id: 2,
+    name: 'Fall Guys: Ultimate Knockout',
+    image: 'https://www.mobygames.com/images/covers/l/676144-fall-guys-ultimate-knockout-playstation-4-front-cover.png'
+  },
+  {
+    id: 3,
+    name: 'DOOM Eternal',
+    image: 'https://i.redd.it/2ei5g6azyf331.jpg'
+  },
+  {
+    id: 4,
+    name: 'Ghost of Tsushima',
+    image: 'https://www.mobygames.com/images/covers/l/666918-ghost-of-tsushima-playstation-4-front-cover.png'
+  },
+  {
+    id: 5,
+    name: 'Animal Crossing: New Horizons',
+    image: 'https://d.newsweek.com/en/full/1574934/animal-crossing-new-horizons-logo-box-art.jpg?w=1600&h=1600&q=88&f=03948221899c5b805c6b6f24140d0c1a'
+  },
+  {
+    id: 6,
+    name: 'Disco Elysium',
+    image: 'https://www.mobygames.com/images/covers/l/744405-disco-elysium-the-final-cut-playstation-4-front-cover.png'
+  },
+  {
+    id: 7,
+    name: 'The Legend of Zelda: The Wind Waker',
+    image: 'https://assets1.ignimgs.com/2019/06/04/legend-of-zelda-the-wind-waker---button-1559683061504.jpg'
+  },
+  {
+    id: 8,
+    name: 'Fallout: New Vegas',
+    image: 'https://static.wikia.nocookie.net/fallout_gamepedia/images/f/ff/FNV_box_art_%28US%29.jpg/revision/latest/scale-to-width-down/1200?cb=20161218132657'
+  },
+];

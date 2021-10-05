@@ -1,5 +1,6 @@
 import Announcement from '../components/Announcement';
 import Footer from '../components/Footer';
+import Games from '../components/Games';
 import NavBar from '../components/NavBar';
 import Newsletter from '../components/Newsletter';
 import Platforms from '../components/Platforms';
@@ -12,6 +13,7 @@ const Home = () => {
       <NavBar />
       <Slider />
       <Platforms />
+      <Games />
       <Newsletter />
       <Footer />
     </>
