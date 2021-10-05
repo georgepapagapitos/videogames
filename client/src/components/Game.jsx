@@ -37,18 +37,10 @@ const Container = styled.div`
   }
 `;
 
-const Circle = styled.div`
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background-color: white;
-  position: absolute;
-`;
-
 const Image = styled.img`
   object-fit: cover;
-  width: 250px;
-  height: 250px;
+  width: 100%;
+  height: 100%;
   z-index: 2;
 `;
 
@@ -73,7 +65,6 @@ const Icon = styled.div`
 const Game = ({ game }) => {
   return (
     <Container>
-      <Circle />
       <Image src={game.image} />
       <Info>
         <Icon>

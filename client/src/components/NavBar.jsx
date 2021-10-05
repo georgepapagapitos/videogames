@@ -43,7 +43,7 @@ const Center = styled.div`
 
 const Heading = styled.h1`
   font-weight: bold;
-  ${mobile({ fontSize: '24px' })};
+  ${mobile({ fontSize: '24px', marginLeft: '10px' })};
   cursor: pointer;
 `;
 
