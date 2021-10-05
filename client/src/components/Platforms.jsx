@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { platforms } from '../data';
 import { mobile } from '../responsive';
+
+// Local import
 import Platform from './Platform';
 
 const Container = styled.div`
