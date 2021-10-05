@@ -1,3 +1,6 @@
+import { useLocation } from 'react-router';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 import styled from 'styled-components';
 import { mobile } from '../responsive';
 
@@ -41,6 +44,9 @@ const Select = styled.select`
 const Option = styled.option``;
 
 const GameList = () => {
+  const location = useLocation();
+  const platformId = location.pathname.split('/')[2];
+
   return (
     <Container>
       <NavBar />
