@@ -93,6 +93,6 @@ export const games = [
   {
     id: 8,
     name: 'Fallout: New Vegas',
-    image: 'https://static.wikia.nocookie.net/fallout_gamepedia/images/f/ff/FNV_box_art_%28US%29.jpg/revision/latest/scale-to-width-down/1200?cb=20161218132657'
+    image: 'https://static.wikia.nocookie.net/fallout_gamepedia/images/f/ff/FNV_box_art_%28US%29.jpg'
   },
 ];
