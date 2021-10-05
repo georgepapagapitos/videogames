@@ -7,6 +7,7 @@ import {
 
 // Local imports
 import Home from './pages/Home';
+import GameList from './pages/GameList';
 import Login from './pages/Login';
 import Register from './pages/Register';
 
@@ -18,6 +19,9 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Home />
+        </Route>
+        <Route path="/games/:platform">
+          <GameList />
         </Route>
         <Route path="/login">{user ? <Redirect to="/" /> : <Login />}</Route>
         <Route path="/register">
