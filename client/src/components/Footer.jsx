@@ -31,6 +31,7 @@ const Description = styled.p`
 
 const SocialsContainer = styled.div`
   display: flex;
+  ${mobile({ justifyContent: 'center', alignItems: 'center' })}
 `;
 
 const SocialIcon = styled.div`
