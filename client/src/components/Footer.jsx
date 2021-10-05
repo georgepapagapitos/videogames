@@ -44,6 +44,7 @@ const SocialIcon = styled.div`
   align-items: center;
   justify-content: center;
   margin-right: 20px;
+  cursor: pointer;
 `;
 
 const Center = styled.div`
@@ -67,6 +68,7 @@ const List = styled.ul`
 const ListItem = styled.li`
   width: 50%;
   margin-bottom: 20px;
+  cursor: pointer;
 `;
 
 const Right = styled.div`
@@ -78,6 +80,7 @@ const ContactItem = styled.div`
   margin-bottom: 20px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 `;
 
 // Footer component
@@ -87,7 +90,7 @@ const Footer = () => {
       <Left>
         <Header>GAMES.</Header>
         <Description>
-          Videogames are a great way to avoid responsibilites and distract
+          Video games are a great way to avoid responsibilites and distract
           yourself from the pain of reality.
         </Description>
         <SocialsContainer>

@@ -92,7 +92,7 @@ export const games = [
   },
   {
     id: 8,
-    name: 'Fallout: New Vegas',
-    image: 'https://static.wikia.nocookie.net/fallout_gamepedia/images/f/ff/FNV_box_art_%28US%29.jpg'
+    name: 'Red Dead Redemption 2',
+    image: 'https://assets.vg247.com/current//2018/05/red_dead_redemption_2_cover_art_1.jpg'
   },
 ];

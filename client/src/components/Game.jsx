@@ -3,6 +3,7 @@ import styled from 'styled-components';
 // mui imports
 import SearchIcon from '@mui/icons-material/Search';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
+import RedeemOutlinedIcon from '@mui/icons-material/RedeemOutlined';
 
 // Styled components
 const Info = styled.div`
@@ -45,7 +46,9 @@ const Circle = styled.div`
 `;
 
 const Image = styled.img`
-  height: 75%;
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
   z-index: 2;
 `;
 
@@ -61,7 +64,7 @@ const Icon = styled.div`
   transition: all 0.25s ease;
 
   &:hover {
-    background-color: gray;
+    background-color: coral;
     transform: scale(1.1);
   }
 `;
@@ -73,7 +76,9 @@ const Game = ({ game }) => {
       <Circle />
       <Image src={game.image} />
       <Info>
-        <Icon></Icon>
+        <Icon>
+          <RedeemOutlinedIcon />
+        </Icon>
         <Icon>
           <SearchIcon />
         </Icon>

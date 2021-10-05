@@ -10,6 +10,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: #ffb69b;
 `;
 
 const Title = styled.h1`
@@ -45,6 +46,7 @@ const Button = styled.button`
   border: none;
   color: white;
   background-color: coral;
+  cursor: pointer;
 `;
 
 const Newsletter = () => {

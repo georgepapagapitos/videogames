@@ -12,7 +12,7 @@ const Container = styled.div`
 `;
 
 const Announcement = () => {
-  return <Container>VIDEOGAMES ARE A GREAT WAY TO ESCAPE REALITY!</Container>;
+  return <Container>VIDEO GAMES ARE A GREAT WAY TO ESCAPE REALITY!</Container>;
 };
 
 export default Announcement;

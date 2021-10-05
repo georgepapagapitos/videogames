@@ -1,9 +1,12 @@
 import styled from 'styled-components';
 import { mobile } from '../responsive';
 
+// mui imports
+import SearchIcon from '@mui/icons-material/Search';
+
 const Container = styled.div`
   height: 60px;
-  ${mobile({ height: '50px' })}
+  ${mobile({ height: '50px' })};
 `;
 
 const Wrapper = styled.div`
@@ -40,7 +43,8 @@ const Center = styled.div`
 
 const Heading = styled.h1`
   font-weight: bold;
-  ${mobile({ fontSize: '24px' })}
+  ${mobile({ fontSize: '24px' })};
+  cursor: pointer;
 `;
 
 const Right = styled.div`
@@ -65,6 +69,7 @@ const NavBar = () => {
         <Left>
           <SearchContainer>
             <Input placeholder="Search..." />
+            <SearchIcon style={{ color: 'gray', fontSize: '16px' }} />
           </SearchContainer>
         </Left>
         <Center>
