@@ -13,7 +13,7 @@ import Register from './pages/Register';
 
 // App component
 function App() {
-  const user = true;
+  const user = false;
   return (
     <Router>
       <Switch>

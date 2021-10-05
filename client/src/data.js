@@ -39,17 +39,17 @@ export const platforms = [
   },
   {
     id: 2,
-    name: 'PlayStation 5',
+    name: 'PlayStation',
     image: 'https://cdn.vox-cdn.com/thumbor/mbd5Plb5WhXlxqblSIRpfeSsHmo=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/21991354/vpavic_4261_20201023_0018.jpg'
   },
   {
     id: 3,
-    name: 'Xbox Series S/X',
+    name: 'Xbox',
     image: 'https://cdn.vox-cdn.com/thumbor/6atm12un5aFnKIGuucGlh9xks1M=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/21867253/twarren_200909_4177_0030.0.jpg'
   },
   {
     id: 4,
-    name: 'Nintendo Switch',
+    name: 'Nintendo',
     image: 'https://cdn.vox-cdn.com/thumbor/6QTbhbmlSyMwl5E8y1aU4x3cTz8=/0x0:2040x1360/1200x800/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/65003327/jbareham_1492_170228_0024.0.0.jpg'
   }
 ];

@@ -35,6 +35,7 @@ const Title = styled.h1`
   margin-bottom: 20px;
   padding: 5px;
   background: rgba(0, 0, 0, 0.3);
+  ${mobile({ padding: '15px' })}
 `;
 
 const Button = styled.button`
