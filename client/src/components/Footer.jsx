@@ -10,8 +10,10 @@ import RoomIcon from '@mui/icons-material/Room';
 import PhoneIcon from '@mui/icons-material/Phone';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 
+// Styled components
 const Container = styled.div`
   display: flex;
+  ${mobile({ flexDirection: 'column', textAlign: 'center' })}
 `;
 
 const Left = styled.div`
@@ -21,40 +23,72 @@ const Left = styled.div`
   padding: 20px;
 `;
 
-const Header = styled.div``;
+const Header = styled.h1``;
 
-const Description = styled.div``;
+const Description = styled.p`
+  margin: 20px 0px;
+`;
 
-const SocialsContainer = styled.div``;
+const SocialsContainer = styled.div`
+  display: flex;
+`;
 
-const SocialIcon = styled.div``;
+const SocialIcon = styled.div`
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  background-color: #${(props) => props.color};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+`;
 
 const Center = styled.div`
   flex: 1;
   padding: 20px;
+  ${mobile({ display: 'none' })}
 `;
 
-const Title = styled.div``;
+const Title = styled.h3`
+  margin-bottom: 30px;
+`;
 
-const List = styled.div``;
+const List = styled.ul`
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+`;
 
-const ListItem = styled.div``;
+const ListItem = styled.li`
+  width: 50%;
+  margin-bottom: 20px;
+`;
 
 const Right = styled.div`
   flex: 1;
   padding: 20px;
 `;
 
-const ContactItem = styled.div``;
+const ContactItem = styled.div`
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+`;
 
-const Payment = styled.div``;
-
+// Footer component
 const Footer = () => {
   return (
     <Container>
       <Left>
         <Header>GAMES.</Header>
-        <Description></Description>
+        <Description>
+          Videogames are a great way to avoid responsibilites and distract
+          yourself from the pain of reality.
+        </Description>
         <SocialsContainer>
           <SocialIcon color="3B5999">
             <FacebookIcon />
@@ -83,7 +117,7 @@ const Footer = () => {
         </List>
       </Center>
       <Right>
-        <Title>Contacts</Title>
+        <Title>Contact Info</Title>
         <ContactItem>
           <RoomIcon style={{ marginRight: '10px' }} />
           123 Street Avenue, West City 54321
@@ -94,9 +128,8 @@ const Footer = () => {
         </ContactItem>
         <ContactItem>
           <MailOutlineIcon style={{ marginRight: '10px' }} />
-          contact@shop.co
+          contact@games.com
         </ContactItem>
-        <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
       </Right>
     </Container>
   );
