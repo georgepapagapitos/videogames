@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { mobile } from '../responsive';
 
@@ -51,7 +52,7 @@ const Button = styled.button`
   ${mobile({ width: '75%' })};
 `;
 
-const Link = styled.a`
+const StyledLink = styled.a`
   margin: 5px 0px;
   font-size: 12px;
   color: white;
@@ -69,8 +70,10 @@ const Login = () => {
           <Input placeholder="Username" />
           <Input placeholder="Password" />
           <Button>LOG IN</Button>
-          <Link>FORGOT PASSWORD?</Link>
-          <Link>CREATE AN ACCOUNT</Link>
+          <StyledLink>FORGOT PASSWORD?</StyledLink>
+          <Link to="/register">
+            <StyledLink>CREATE AN ACCOUNT</StyledLink>
+          </Link>
         </Form>
       </Wrapper>
     </Container>
