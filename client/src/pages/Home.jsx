@@ -1,4 +1,5 @@
 import Announcement from '../components/Announcement';
+import Footer from '../components/Footer';
 import NavBar from '../components/NavBar';
 import Newsletter from '../components/Newsletter';
 import Platforms from '../components/Platforms';
@@ -12,6 +13,7 @@ const Home = () => {
       <Slider />
       <Platforms />
       <Newsletter />
+      <Footer />
     </>
   );
 };
