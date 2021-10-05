@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { mobile } from '../responsive';
 
 // mui imports
 import SendIcon from '@mui/icons-material/Send';
@@ -20,14 +21,17 @@ const Description = styled.div`
   font-size: 24px;
   font-weight: 300;
   margin-bottom: 20px;
+  ${mobile({ textAlign: 'center' })}
 `;
 
 const InputContainer = styled.div`
   width: 50%;
   height: 40px;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   border: 1px solid lightgray;
+  ${mobile({ width: '80%' })}
 `;
 
 const Input = styled.input`
@@ -46,8 +50,8 @@ const Button = styled.button`
 const Newsletter = () => {
   return (
     <Container>
-      <Title>NEWSLETTER</Title>
-      <Description>GET UPDATES ON YOUR FAVORITE GAMES</Description>
+      <Title>Newsletter</Title>
+      <Description>Get updates on your favorite games.</Description>
       <InputContainer>
         <Input placeholder="Enter your email..." />
         <Button>

@@ -9,8 +9,8 @@ const Container = styled.div`
 const Wrapper = styled.div`
   padding: 10px 20px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   ${mobile({ padding: '10px 0px' })}
 `;
 
